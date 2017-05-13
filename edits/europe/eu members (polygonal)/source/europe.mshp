@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <HISTORY>
+    <MODULE>Merge Layers</MODULE>
+    <OPTION type="boolean" id="SRCINFO" name="Add Source Information">TRUE</OPTION>
+    <OPTION type="boolean" id="MATCH" name="Match Fields by Name">TRUE</OPTION>
+    <DATA_LIST type="shapes_list" id="INPUT" name="Layers">
+      <DATA>
+        <MODULE>Union</MODULE>
+        <OPTION type="boolean" id="SPLIT" name="Split Parts">FALSE</OPTION>
+        <DATA type="shapes" id="A" name="Layer A">
+          <MODULE>Union</MODULE>
+          <OPTION type="boolean" id="SPLIT" name="Split Parts">FALSE</OPTION>
+          <DATA type="shapes" id="A" name="Layer A">
+            <MODULE>Merge Layers</MODULE>
+            <OPTION type="boolean" id="SRCINFO" name="Add Source Information">TRUE</OPTION>
+            <OPTION type="boolean" id="MATCH" name="Match Fields by Name">TRUE</OPTION>
+            <DATA_LIST type="shapes_list" id="INPUT" name="Layers">
+              <DATA>
+                <MODULE>Polygon Parts to Separate Polygons</MODULE>
+                <OPTION type="boolean" id="LAKES" name="Ignore Lakes">FALSE</OPTION>
+                <DATA type="shapes" id="POLYGONS" name="Polygons">
+                  <FILE>X:\+var\maps\planet34worldmap\planet34worldmap.shp</FILE>X:\+var\maps\planet34worldmap\planet34worldmap.shp</DATA>
+              </DATA>
+              <DATA>
+                <FILE>X:\+var\maps\planet34worldmap\planet34worldmap.shp</FILE>
+              </DATA>
+            </DATA_LIST>X:\+var\maps\planet34worldmap\europe-polygon-p34-fixed.shp</DATA>
+          <DATA type="shapes" id="B" name="Layer B">
+            <MODULE>Polygon Parts to Separate Polygons</MODULE>
+            <OPTION type="boolean" id="LAKES" name="Ignore Lakes">FALSE</OPTION>
+            <DATA type="shapes" id="POLYGONS" name="Polygons">
+              <FILE>X:\+var\maps\planet34worldmap\planet34worldmap.shp</FILE>X:\+var\maps\planet34worldmap\planet34worldmap.shp</DATA>X:\+var\maps\planet34worldmap\russiaSmaller.shp</DATA>NOT SET</DATA>
+        <DATA type="shapes" id="B" name="Layer B">
+          <FILE>X:\+var\maps\planet34worldmap\planet34worldmap.shp</FILE>X:\+var\maps\planet34worldmap\malta.shp</DATA>
+      </DATA>
+      <DATA>
+        <MODULE>Polygon Parts to Separate Polygons</MODULE>
+        <OPTION type="boolean" id="LAKES" name="Ignore Lakes">FALSE</OPTION>
+        <DATA type="shapes" id="POLYGONS" name="Polygons">
+          <FILE>X:\+var\gis maps\!sources\naturalearth\ne_10m_admin_0_countries.shp</FILE>X:\+var\gis maps\!sources\naturalearth\ne_10m_admin_0_countries.shp</DATA>
+      </DATA>
+    </DATA_LIST>
+  </HISTORY>
+  <SOURCE>
+    <FILE>C:\Users\Andrei34\Desktop\europe.shp</FILE>
+    <DATABASE></DATABASE>
+    <PROJECTION>
+      <OGC_WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</OGC_WKT>
+      <PROJ4>+proj=longlat +a=6378137.000000 +b=6356752.314245 +no_defs</PROJ4>
+      <EPSG>-1</EPSG>
+    </PROJECTION>
+  </SOURCE>
+  <DESCRIPTION></DESCRIPTION>
+</SAGA_METADATA>
